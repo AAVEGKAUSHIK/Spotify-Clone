@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="left_side">
+            <div class="upper">
+                <div class="logo">
+
+                    <img src="logo.png" alt="">
+                </div>
+                <div class="upper_section">
+                    <div class="home">
+                        <div class="home_img">
+                            <img src="home.svg" alt="">  
+                        </div>
+                        <div class="home_txt">
+                            <h2>Home</h2>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <div class="search_img">
+                            <img src="search.svg" alt="">  
+                        </div>
+                        <div class="search_txt">
+                            <h2 class="h2">Search</h2>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="lower">
+                <div class="library">
+                    <div class="library_img">
+                        <img src="library.svg" alt="">  
+                    </div>
+                    <div class="library_txt">
+                        <h2 class="h2">Your Library</h2>
+                    </div>
+                    <div class="plus">
+                        <img src="plus.svg" alt="">
+                    </div>
+                </div>
+               
+                <section class="scroll">
+                    <div class="create_playlist">
+                        <h2>Create Your first playlist</h2>
+                        <span>It's easy, We'll help you</span> <br>
+                        <button>Create Playlist</button>
+                    </div>
+
+                    <div class="follow_podcast">
+                        <h2>Let's find some podcast to follow</h2>
+                        <span>We'll keep you updated on new episodes</span>
+                        <button>Browse podcasts</button>
+                    </div>
+                </section>
+
+                <div class="base1">
+                    <a href="">Legal</a>
+                    <a href="">Safety & Privacy centre</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+                <div class="base2">
+                    <a href="">Coockies</a>
+                    <a href="">About Ads</a>
+                    <a href="">Accessibility</a>
+                </div>
+                <div class="base3">
+                    <a href="">Coockies</a>
+                </div>
+
+                <div class="lan">
+                    <div class="img">
+                        <img src="language.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <span>English</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="signup-bar">
+            <div class="song-range">
+                <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+            </div>
+            <div class="songbuttons">
+                <audio id="audioPlayer" src="your-audio-file.mp3"></audio>
+                <img src="previoussong.svg" alt="">
+                <button style="border: none; background-color: black;" onclick="togglePlayPause()"><img style="width: 1.3vw; " src="play.svg" alt=""></button>
+                <img src="nextsong.svg" alt="">
+            </div>
+        </div>
+        
+        <div class="right_side">
+                <div class="nav">
+                    <div class="i_back">
+                        <img src="left icon.svg" alt="">
+                    </div>
+                    <div class="i_forward">
+                        <img src="right icon (1).svg" alt="">
+                    </div>
+                    <div class="nav_link">
+                        <ul>
+                            <li>Premium</li>
+                            <li>Support</li>
+                            <li>Download</li>
+                        </ul>
+                    </div>
+                    <div class="sign_up">
+                            <span>Sign up</span>  
+                    </div>
+                    <div class="log_in">
+                        <button>Log in</button> 
+                    </div>
+                </div>
+                
+                <div class="main">
+                    <h1>Spotify Playlist</h1>
+                    <div class="card-container">
+                        <div class="card-1">
+                            <div class="play">
+                                <button><img src="play.svg" alt=""></button>
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f00000002cef8ac8b3a702dfba2ae85a9" alt="">
+                            <h2>Today's top hits</h2>
+                            <h3>Dua Lipa is on top of tha hottest 50!</h3>
+                        </div>
+                        <div class="card-2">
+                            <div class="play">
+                                <button><img src="play.svg" alt=""></button>
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f00000002ec94bf1083be30463d4b731d" alt="">
+                            <h2>Chillhop</h2>
+                            <h3>Blissed out beats and head nodding grooves-Relax,...</h3>
+                        </div>
+                        <div class="card-3">
+                            <div class="play">
+                                <button><img src="play.svg" alt=""></button>
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f00000002bdeb1c317ac2dd10f2397e4c" alt="">
+                            <h2>Jazz in the backgrou...</h2>
+                            <h3>Soft instrumental Jazz for all your activities.</h3>
+                        </div>
+                        <div class="card-4">
+                            <div class="play">
+                                <button><img src="play.svg" alt=""></button>
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f00000002d8fe1c03afc22a01d5109233" alt="">
+                            <h2>Calming Acoustic</h2>
+                            <h3>Keep calm with instrumental acoustic...</h3>
+                        </div>
+                        <div class="card-5">
+                            <div class="play">
+                                <button><img src="play.svg" alt=""></button>
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f000000021c9bfca9b2fd2f546a30f751" alt="">
+                            <h2>Big on the internet</h2>
+                            <h3>iykyk</h3>
+                        </div>
+                    </div>
+                    <div class="main-1">
+                        <div class="card-container">
+                            <div class="card-1">
+                                <div class="play">
+                                    <button><img src="play.svg" alt=""></button>
+                                </div>
+                                <img src="https://i.scdn.co/image/ab67706f00000002404de135dd865866a3f021f0" alt="">
+                                <h2>All out 2000s</h2>
+                                <h3>The biggest songs of the 2000s.</h3>
+                            </div>
+                            <div class="card-2">
+                                <div class="play">
+                                    <button><img src="play.svg" alt=""></button>
+                                </div>
+                                <img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                                <h2>Lofi beats</h2>
+                                <h3>Chill beats, lofi vibes, new tracks every weeks...</h3>
+                            </div>
+                            <div class="card-3">
+                                <div class="play">
+                                    <button><img src="play.svg" alt=""></button>
+                                </div>
+                                <img src="https://i.scdn.co/image/ab67706f00000002dec17246891b5b4eb97bdb0d" alt="">
+                                <h2>Chillout lounge</h2>
+                                <h3>Just lean back enjoy relaxed beats.</h3>
+                            </div>
+                            <div class="card-4">
+                                <div class="play">
+                                    <button><img src="play.svg" alt=""></button>
+                                </div>
+                                <img src="https://i.scdn.co/image/ab67706f00000002cc6f1f0ad03c17fa6c67d48d" alt="">
+                                <h2>RapCanviar</h2>
+                                <h3>New music from 21 savage, Ye and Yeat.</h3>
+                            </div>
+                            <div class="card-5">
+                                <div class="play">
+                                    <button><img src="play.svg" alt=""></button>
+                                </div>
+                                <img src="https://i.scdn.co/image/ab67706f00000002c1811d50fbd4df02ea3b06a3" alt="">
+                                <h2>Peaceful Guitar</h2>
+                                <h3>Unwind to these calm classical guitar pieces.</h3>
+                            </div>
+                    </div>
+                </div>
+        </div>
+        
+
+                    <!-- FOOTER -->
+        <!-- <div class="footer">
+            <div class="col-1">
+                <ul>
+                    <li>Company</li>
+                    <li>About</li>
+                    <li>Jobs</li>
+                    <li>For the Record</li>
+                </ul>
+            </div>
+            <div class="col-2">
+                
+            </div>
+            <div class="col-3">
+                
+            </div>
+        </div> -->
+        <script src="script.js"></script>
+        
+</body>
+</html>
